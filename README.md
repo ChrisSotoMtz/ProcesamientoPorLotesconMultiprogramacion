@@ -2,30 +2,46 @@
 Algoritmo de planificación FCFS (First Come First Server)
 
 # Especificaciones
-1. En esta práctica se contempla el diagrama de Cinco Estados:
-  a. Nuevo: Procesos que se acaban de crear pero aún no han sido admitidos por el sistema
-     operativo en el grupo de procesos ejecutables.
-  b. Listos: Procesos que están preparados para ejecutarse, en cuanto sea su turno.
-  c. Ejecución: Proceso que está actualmente en ejecución.
-  d. Bloqueado: Proceso que no puede ejecutar hasta que se produzca cierto suceso, como
-     la terminación de una operación de E/S.
-  e. Terminado: Un proceso que ha sido excluido por el sistema operativo del grupo de
-     procesos activos, bien porque se detuvo o porque fue abandonado por alguna razón.
-2. El algoritmo por implementar para la cola de listos es el FCFS es decir los procesos se
-   ordenarán conforme van llegando.
-3. Se preguntará el Número de Procesos inicial pudiendo ser N procesos.
-4. El máximo de procesos en memoria será de 5 (Recuerde que los estados a considerar en este
-   caso son: Ejecución, Bloqueado y Listo).
-5. Los procesos que no tengan cupo en la cola de listos deberán quedarse en la cola de Nuevos,
-   esperando a que algún proceso termine y así ingresar al sistema.
-6. A cada uno de los procesos que se generan (punto 3) se le asignará internamente:
-   a. Identificador de proceso único. (Puede ser secuencial)
-   b. Tiempo máximo estimado (aleatorio, validar que sea mayor a 0 y en un rango entre
-       6 y 15).
-   c. Datos para la operación a realizar (aleatorio, validar error aritmético). (Ver punto 2      
-      de la actividad 4 (programa 2)).
-7. Las teclas a utilizar son: 
-<img src="https://cdn.discordapp.com/attachments/762088441314934794/859551993831489556/Screenshot_1.png" width="700" height="424">
+1. El programa preguntará el número de trabajos inicial, para luego conformar lotes con
+   capacidad máxima de 5 (ver Requerimientos programa 1).
+2. En esta simulación la información de cada trabajo se generará internamente, es decir ya no
+   será necesario introducir datos desde teclado, la información a generar es:
+     a. Número de cada proceso, validar que sea único. (Puede ser consecutivo)
+     b. Tiempo Máximo Estimado, se generará de forma aleatoria, validando que sea mayor 
+        a 0 (rango entre 6 y 15).
+     c. Operación (+, -, *, /, residuo) a realizar con sus operandos (validar operaciones),
+        aleatoriamente.
+     NOTA: En la práctica anterior se capturaba el nombre del programador, en esta práctica
+     ya no se requiere ese dato (se elimina).
+3. Los trabajos se ejecutarán conforme a su número asignado (ID).
+4. Los procesos una vez en ejecución pueden ser Interrumpidos por Entrada/Salida o bien
+   terminados por Error (Observar la diferencia en la tabla).
+5. La interrupción y la terminación de los trabajos en ejecución, se generaran por medio de
+   teclas.
+6. Las teclas a utilizar son:
+   <img src="https://cdn.discordapp.com/attachments/762088441314934794/859552834194243584/unknown.png" width="698" height="310">
+7. Deberá mostrarse en pantalla:
+    a. Procesos en Espera correspondientes al Lote en ejecución:
+      i. Número de Programa (en el programa anterior se listaba nombre del
+         programador ahora es número de programa).
+      ii. Tiempo Máximo Estimado.
+      iii. Mostrar el tiempo transcurrido. En el caso de que el proceso no se haya
+           ejecutado aún se desplegara 0.
+    b. Número de Lotes Pendientes: Especificar el número de lotes pendientes por ejecutar,
+       si no hay se mostrará 0.
+    c. Proceso en Ejecución:
+      i. Se mostraran todos los datos correspondientes al proceso. 
+      ii. Tiempo que ya ha sido ejecutado.
+      iii. Tiempo restante por ejecutar 
+    d. Trabajos Terminados:
+      i. Número de Programa.
+      ii. Operación
+      iii. Resultado de la operación o bien ERROR cuando el proceso haya sido
+           terminado con la tecla que genera error.
+    e. Reloj (Contador General).
+8. Al terminar el lote en ejecución, continuará con el siguiente lote en espera.
+9. El programa terminará cuando todas las operaciones de todos los lotes se hayan realizado
+   (Pausarlo).
 
 # Contacto
 christian.soto4752@alumnos.udg.mx  
