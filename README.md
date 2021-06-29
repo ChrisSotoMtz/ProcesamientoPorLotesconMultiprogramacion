@@ -1,5 +1,5 @@
 # Descripcion del proyecto
-Algoritmo de planificación FCFS (First Come First Server)
+procesamiento por lotes con Multiprogramación
 
 # Especificaciones
 1. El programa preguntará el número de trabajos inicial, para luego conformar lotes con
