@@ -25,7 +25,7 @@ Algoritmo de planificación FCFS (First Come First Server)
    c. Datos para la operación a realizar (aleatorio, validar error aritmético). (Ver punto 2      
       de la actividad 4 (programa 2)).
 7. Las teclas a utilizar son: 
-<img src="https://drive.google.com/file/d/19vcqASP4XIKayJS-46_9TwHgfBjxYWkj/view?usp=sharing" width="300" height="500">
+<img src="https://cdn.discordapp.com/attachments/762088441314934794/859551993831489556/Screenshot_1.png" width="700" height="424">
 
 # Contacto
 christian.soto4752@alumnos.udg.mx  
